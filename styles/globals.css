@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy-950 text-slate-200 font-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-gold-400 text-navy-950 font-semibold px-7 py-3 rounded transition-all duration-200 hover:bg-gold-300 hover:shadow-lg hover:shadow-gold-400/20 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-offset-2 focus:ring-offset-navy-950;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-gold-400 text-gold-400 font-semibold px-7 py-3 rounded transition-all duration-200 hover:bg-gold-400/10 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-offset-2 focus:ring-offset-navy-950;
+  }
+
+  .section-label {
+    @apply text-gold-400 text-xs font-semibold uppercase tracking-[0.2em] mb-3;
+  }
+
+  .card {
+    @apply bg-navy-800 border border-navy-700 rounded-xl p-8 transition-all duration-300 hover:border-gold-400/30 hover:shadow-xl hover:shadow-gold-400/5;
+  }
+
+  .input-field {
+    @apply w-full bg-navy-800 border border-navy-600 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400 transition-colors duration-200;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060B18;
+}
+::-webkit-scrollbar-thumb {
+  background: #172344;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4A843;
+}
+
+/* Animated underline for nav links */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: #D4A843;
+  transition: width 0.2s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
