@@ -50,10 +50,10 @@ const caseStudies = [
 ];
 
 const tagColors: Record<string, string> = {
-  Analytics: 'text-blue-400 bg-blue-400/10 border-blue-400/20',
+  Analytics: 'text-blue-400 bg-blue-brand/10 border-blue-brand/30',
   Engineering: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
   'BI & Reporting': 'text-purple-400 bg-purple-400/10 border-purple-400/20',
-  'AI & ML': 'text-gold-400 bg-gold-400/10 border-gold-400/20',
+  'AI & ML': 'text-blue-400 bg-blue-brand/10 border-blue-brand/20',
   'Data Engineering': 'text-sky-400 bg-sky-400/10 border-sky-400/20',
 };
 
@@ -67,14 +67,14 @@ export default function CaseStudies() {
       />
 
       {/* Header */}
-      <section className="relative bg-navy-900 border-b border-navy-700 py-20 overflow-hidden">
+      <section className="relative bg-navy-900 border-b border-white/5 py-20 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern bg-grid-sm opacity-60" aria-hidden="true" />
         <div className="relative max-w-7xl mx-auto px-6">
           <p className="section-label">Proven Results</p>
-          <h1 className="font-display text-5xl md:text-6xl font-semibold text-slate-100 mb-5 max-w-2xl">
+          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-5 max-w-2xl">
             Work that speaks in numbers
           </h1>
-          <p className="text-slate-400 text-lg max-w-xl">
+          <p className="text-white/50 text-lg max-w-xl">
             A sample of real engagements. All figures are verified — we document outcomes at project
             close with client sign-off.
           </p>
@@ -92,17 +92,17 @@ export default function CaseStudies() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span
-                    className={`text-xs font-medium px-2.5 py-1 rounded border ${tagColors[tag] ?? 'text-slate-400 bg-navy-700 border-navy-600'}`}
+                    className={`text-xs font-medium px-2.5 py-1 rounded border ${tagColors[tag] ?? 'text-white/50 bg-card border-white/10'}`}
                   >
                     {tag}
                   </span>
-                  <span className="text-xs text-slate-500">{industry}</span>
+                  <span className="text-xs text-white/30">{industry}</span>
                 </div>
-                <h2 className="font-display text-2xl font-semibold text-slate-100 mb-3">
+                <h2 className="font-display text-2xl font-bold text-white mb-3">
                   {title}
                 </h2>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">{summary}</p>
-                <p className="text-gold-400 text-sm font-semibold">{result}</p>
+                <p className="text-white/50 text-sm leading-relaxed mb-4">{summary}</p>
+                <p className="text-blue-400 text-sm font-semibold">{result}</p>
               </div>
               <div className="shrink-0 md:self-center">
                 <Link
@@ -118,12 +118,12 @@ export default function CaseStudies() {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy-800 border-t border-navy-700">
+      <section className="bg-navy-900 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">
-          <h2 className="font-display text-4xl font-semibold text-slate-100 mb-4">
+          <h2 className="font-display text-4xl font-bold text-white mb-4">
             Want results like these?
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-white/50 mb-8">
             Tell us about your data challenge. We&apos;ll scope a solution and give you a clear
             picture of what outcomes are realistic.
           </p>

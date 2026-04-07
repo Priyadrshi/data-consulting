@@ -58,14 +58,14 @@ export default function Contact() {
       />
 
       {/* Header */}
-      <section className="relative bg-navy-900 border-b border-navy-700 py-20 overflow-hidden">
+      <section className="relative bg-navy-900 border-b border-white/5 py-20 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern bg-grid-sm opacity-60" aria-hidden="true" />
         <div className="relative max-w-7xl mx-auto px-6">
           <p className="section-label">Get in Touch</p>
-          <h1 className="font-display text-5xl md:text-6xl font-semibold text-slate-100 mb-5 max-w-2xl">
+          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-5 max-w-2xl">
             Let&apos;s talk about your data
           </h1>
-          <p className="text-slate-400 text-lg max-w-xl">
+          <p className="text-white/50 text-lg max-w-xl">
             Fill in the form and we will respond within one business day. No sales pressure — just
             an honest conversation about your situation.
           </p>
@@ -76,7 +76,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-16">
           {/* Left — info */}
           <div>
-            <h2 className="font-display text-2xl font-semibold text-slate-100 mb-6">
+            <h2 className="font-display text-2xl font-bold text-white mb-6">
               What to expect
             </h2>
             <ul className="space-y-5">
@@ -107,24 +107,24 @@ export default function Contact() {
                     {step}
                   </span>
                   <div>
-                    <p className="text-slate-100 font-medium text-sm mb-1">{label}</p>
-                    <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                    <p className="text-white font-medium text-sm mb-1">{label}</p>
+                    <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
                   </div>
                 </li>
               ))}
             </ul>
 
-            <div className="mt-10 p-5 bg-navy-800 border border-navy-700 rounded-xl">
-              <p className="text-xs text-slate-400 uppercase tracking-widest font-semibold mb-3">
+            <div className="mt-10 p-5 bg-navy-900 border border-white/5 rounded-xl">
+              <p className="text-xs text-white/50 uppercase tracking-widest font-semibold mb-3">
                 Direct Contact
               </p>
               <a
                 href="mailto:hello@acadore.com"
-                className="text-gold-400 hover:text-gold-300 transition-colors duration-200 text-sm"
+                className="text-blue-400 hover:text-blue-300 transition-colors duration-200 text-sm"
               >
                 hello@acadore.com
               </a>
-              <p className="text-slate-500 text-xs mt-2">
+              <p className="text-white/30 text-xs mt-2">
                 Prefer email? Write to us directly — same 24-hour response commitment.
               </p>
             </div>
@@ -139,10 +139,10 @@ export default function Contact() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="font-display text-2xl font-semibold text-slate-100 mb-3">
+                <h3 className="font-display text-2xl font-bold text-white mb-3">
                   Message received
                 </h3>
-                <p className="text-slate-400 text-sm">
+                <p className="text-white/50 text-sm">
                   Thank you — a senior member of our team will be in touch within one business day.
                 </p>
               </div>
@@ -150,8 +150,8 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="card space-y-5">
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="name" className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                      Full Name <span className="text-gold-400">*</span>
+                    <label htmlFor="name" className="block text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">
+                      Full Name <span className="text-blue-400">*</span>
                     </label>
                     <input
                       id="name"
@@ -165,8 +165,8 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                      Work Email <span className="text-gold-400">*</span>
+                    <label htmlFor="email" className="block text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">
+                      Work Email <span className="text-blue-400">*</span>
                     </label>
                     <input
                       id="email"
@@ -182,7 +182,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                  <label htmlFor="company" className="block text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">
                     Company Name
                   </label>
                   <input
@@ -197,8 +197,8 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    What can we help you with? <span className="text-gold-400">*</span>
+                  <label htmlFor="message" className="block text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">
+                    What can we help you with? <span className="text-blue-400">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -219,7 +219,7 @@ export default function Contact() {
                 )}
 
                 <div className="flex items-center justify-between pt-2">
-                  <p className="text-slate-500 text-xs">
+                  <p className="text-white/30 text-xs">
                     Your information is never shared or sold.
                   </p>
                   <button

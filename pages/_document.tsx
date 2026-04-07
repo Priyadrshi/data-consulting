@@ -6,18 +6,9 @@ export default function Document() {
     '@type': 'Organization',
     name: 'Acadore Consulting',
     url: 'https://www.acadore.com',
-    logo: 'https://www.acadore.com/logo.png',
-    description:
-      'Data analytics and engineering consultancy with 10+ years of experience serving US businesses.',
-    address: {
-      '@type': 'PostalAddress',
-      addressCountry: 'US',
-    },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      email: 'hello@acadore.com',
-      contactType: 'customer service',
-    },
+    description: 'Data analytics and engineering consultancy with 10+ years of experience serving US businesses.',
+    address: { '@type': 'PostalAddress', addressCountry: 'US' },
+    contactPoint: { '@type': 'ContactPoint', email: 'hello@acadore.com', contactType: 'customer service' },
     sameAs: ['https://www.linkedin.com/company/acadore-consulting'],
   };
 
@@ -25,22 +16,16 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="theme-color" content="#D4A843" />
+        <meta name="theme-color" content="#3636E8" />
         <link rel="icon" href="/favicon.ico" />
-
-        {/* Google Fonts — Playfair Display + DM Sans */}
+        {/* Plus Jakarta Sans + DM Sans */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
           rel="stylesheet"
         />
-
-        {/* JSON-LD Organization Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
       <body>
         <Main />

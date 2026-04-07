@@ -89,17 +89,17 @@ export default function Services() {
       />
 
       {/* Page Header */}
-      <section className="relative bg-navy-900 border-b border-navy-700 py-20 overflow-hidden">
+      <section className="relative bg-navy-900 border-b border-white/5 py-20 overflow-hidden">
         <div
           className="absolute inset-0 bg-grid-pattern bg-grid-sm opacity-60"
           aria-hidden="true"
         />
         <div className="relative max-w-7xl mx-auto px-6">
           <p className="section-label">What We Do</p>
-          <h1 className="font-display text-5xl md:text-6xl font-semibold text-slate-100 mb-5 max-w-2xl">
+          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-5 max-w-2xl">
             Services Built Around Your Data
           </h1>
-          <p className="text-slate-400 text-lg max-w-xl">
+          <p className="text-white/50 text-lg max-w-xl">
             Every engagement is scoped around your specific business problem — not a pre-packaged
             service catalog. Here is what we cover.
           </p>
@@ -116,18 +116,18 @@ export default function Services() {
             >
               {/* Left */}
               <div>
-                <span className="font-display text-6xl font-semibold text-navy-600 select-none">
+                <span className="font-display text-6xl font-extrabold text-blue-brand/20 select-none">
                   {number}
                 </span>
-                <h2 className="font-display text-2xl font-semibold text-slate-100 mt-2 mb-3">
+                <h2 className="font-display text-2xl font-bold text-white mt-2 mb-3">
                   {title}
                 </h2>
-                <p className="text-gold-400 text-sm font-medium mb-4">{summary}</p>
+                <p className="text-blue-400 text-sm font-medium mb-4">{summary}</p>
                 <div className="flex flex-wrap gap-2">
                   {tools.map((t) => (
                     <span
                       key={t}
-                      className="text-xs bg-navy-700 text-slate-400 border border-navy-600 px-2.5 py-1 rounded"
+                      className="text-xs bg-card text-white/50 border border-white/10 px-2.5 py-1 rounded"
                     >
                       {t}
                     </span>
@@ -137,15 +137,15 @@ export default function Services() {
 
               {/* Right */}
               <div>
-                <p className="text-slate-400 leading-relaxed mb-6">{description}</p>
-                <h4 className="text-slate-200 font-semibold text-sm mb-3 uppercase tracking-wider">
+                <p className="text-white/50 leading-relaxed mb-6">{description}</p>
+                <h4 className="text-white/80 font-semibold text-sm mb-3 uppercase tracking-wider">
                   Key Deliverables
                 </h4>
                 <ul className="space-y-2">
                   {deliverables.map((d) => (
                     <li key={d} className="flex items-start gap-2.5">
                       <svg
-                        className="w-4 h-4 text-gold-400 mt-0.5 shrink-0"
+                        className="w-4 h-4 text-blue-400 mt-0.5 shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -155,7 +155,7 @@ export default function Services() {
                           clipRule="evenodd"
                         />
                       </svg>
-                      <span className="text-slate-300 text-sm">{d}</span>
+                      <span className="text-white/70 text-sm">{d}</span>
                     </li>
                   ))}
                 </ul>
@@ -166,12 +166,12 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy-800 border-t border-navy-700">
+      <section className="bg-navy-900 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">
-          <h2 className="font-display text-4xl font-semibold text-slate-100 mb-4">
+          <h2 className="font-display text-4xl font-bold text-white mb-4">
             Not sure which service fits?
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-white/50 mb-8">
             Book a free 30-minute discovery call. We&apos;ll listen first, then recommend the right
             starting point for your situation.
           </p>

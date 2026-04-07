@@ -10,73 +10,56 @@ const stats = [
 
 const services = [
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" />
-      </svg>
-    ),
+    icon: '01',
     title: 'Data Strategy & Governance',
-    desc: 'Define your data roadmap, ownership structures, and compliance frameworks. We align data goals directly with P&L outcomes.',
+    desc: 'Align data goals directly with revenue and risk outcomes. We define ownership, compliance, and roadmap — built for your business, not a template.',
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z" />
-      </svg>
-    ),
+    icon: '02',
     title: 'Data Engineering',
-    desc: 'Build production-grade pipelines, cloud warehouses (Snowflake, BigQuery, Redshift), and ETL infrastructure that scales with your business.',
+    desc: 'Production-grade pipelines, cloud warehouses (Snowflake, BigQuery, Redshift), and ETL infrastructure that scales without breaking.',
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-      </svg>
-    ),
+    icon: '03',
     title: 'Business Intelligence',
-    desc: 'Interactive dashboards in Power BI, Tableau, and Looker that give your executives and teams real-time answers — no SQL required.',
+    desc: 'Dashboards in Power BI, Tableau, and Looker that give your leaders real-time answers. No SQL required.',
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
-      </svg>
-    ),
+    icon: '04',
     title: 'Advanced Analytics & AI',
-    desc: 'Machine learning models, forecasting engines, and AI-powered automation that surface insights your analysts couldn\'t find manually.',
+    desc: 'ML models, forecasting engines, and AI automation that surface insights your team would otherwise miss — delivered production-ready.',
+  },
+  {
+    icon: '05',
+    title: 'Privacy & Compliance',
+    desc: 'GDPR, CCPA, and SOC 2 controls implemented and documented — before regulators require it.',
+  },
+  {
+    icon: '06',
+    title: 'Data Monetization',
+    desc: 'Turn your data assets into new revenue streams through data products, licensing, and insight services.',
   },
 ];
 
 const testimonials = [
   {
-    quote:
-      'Acadore rebuilt our entire reporting stack in 8 weeks. We went from weekly Excel reports to live dashboards that our board now relies on every Monday.',
+    quote: 'Acadore rebuilt our entire reporting stack in 8 weeks. We went from weekly Excel reports to live dashboards that our board now relies on every Monday.',
     name: 'Sarah K.',
     role: 'VP of Operations',
     company: 'Mid-size US Retailer',
   },
   {
-    quote:
-      'Their data engineering team cut our pipeline costs by 40% while improving reliability from 94% to 99.8% uptime. Exceptional work.',
+    quote: 'Their data engineering team cut our pipeline costs by 40% while improving reliability from 94% to 99.8% uptime. Exceptional work.',
     name: 'Marcus T.',
     role: 'CTO',
     company: 'Series B SaaS Company',
   },
   {
-    quote:
-      'We\'ve worked with three consultancies before Acadore. None of them understood our data the way this team did from day one.',
+    quote: "We've worked with three consultancies before Acadore. None of them understood our data the way this team did from day one.",
     name: 'Jennifer L.',
     role: 'Chief Data Officer',
     company: 'Healthcare Analytics Firm',
   },
-];
-
-const trustBadges = [
-  'GDPR Compliant',
-  'CCPA Compliant',
-  'SOC 2 Type II Aligned',
-  'NDA-Protected Engagements',
-  'AWS & Azure Certified',
 ];
 
 export default function Home() {
@@ -84,57 +67,57 @@ export default function Home() {
     <>
       <Meta
         title="Home"
-        description="Acadore Consulting — Expert data analytics and engineering team with 10+ years of experience. We help US businesses turn data into measurable competitive advantage."
+        description="Acadore Consulting — Expert data analytics and engineering team with 10+ years of experience helping US businesses turn data into measurable competitive advantage."
         url="/"
       />
 
       {/* ── HERO ─────────────────────────────────────── */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden">
-        {/* Background grid */}
-        <div
-          className="absolute inset-0 bg-grid-pattern bg-grid-sm opacity-100"
-          aria-hidden="true"
-        />
-        {/* Radial glow */}
-        <div
-          className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full opacity-10 blur-3xl pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse, #D4A843 0%, transparent 70%)' }}
-          aria-hidden="true"
-        />
+      <section className="relative min-h-screen flex items-center bg-navy-950 overflow-hidden">
+        {/* Grid bg */}
+        <div className="absolute inset-0 bg-grid-pattern bg-grid-sm" aria-hidden="true" />
+        {/* Blue glow bottom-right */}
+        <div className="absolute bottom-0 right-0 w-[700px] h-[500px] opacity-20 blur-3xl pointer-events-none rounded-full"
+          style={{ background: 'radial-gradient(ellipse, #3636E8 0%, transparent 70%)' }} aria-hidden="true" />
+        {/* Blue glow top-left */}
+        <div className="absolute top-0 left-0 w-[500px] h-[400px] opacity-10 blur-3xl pointer-events-none rounded-full"
+          style={{ background: 'radial-gradient(ellipse, #4B4BFF 0%, transparent 70%)' }} aria-hidden="true" />
 
-        <div className="relative max-w-7xl mx-auto px-6 py-24">
-          <div className="max-w-3xl">
-            <p className="section-label">Data Consultancy · Est. 2014</p>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-semibold text-slate-100 leading-tight mb-6">
-              Your Data,{' '}
-              <span className="text-gold-400">Engineered</span>{' '}
-              for Growth
+        <div className="relative max-w-7xl mx-auto px-6 py-32">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-blue-brand/10 border border-blue-brand/30 text-blue-400 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-sm mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block"></span>
+              Data Consultancy · Est. 2014 · US-focused
+            </div>
+
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] mb-6">
+              Your Data,<br />
+              <span className="text-blue-bright">Engineered</span> for Growth
             </h1>
-            <p className="text-slate-400 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
+
+            <p className="text-white/60 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
               Acadore Consulting is a senior-only data analytics and engineering team with 10+ years
               of experience. We help US businesses reduce costs, accelerate decisions, and build
               data infrastructure that actually works.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-primary">
+
+            <div className="flex flex-wrap gap-4 mb-14">
+              <Link href="/contact" className="btn-primary text-base px-8 py-4">
                 Get a Free Consultation
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
-              <Link href="/case-studies" className="btn-outline">
+              <Link href="/case-studies" className="btn-outline text-base px-8 py-4">
                 View Case Studies
               </Link>
             </div>
 
-            {/* Trust strip */}
-            <div className="flex flex-wrap gap-3 mt-12">
-              {trustBadges.map((badge) => (
-                <span
-                  key={badge}
-                  className="flex items-center gap-1.5 text-xs text-slate-400 bg-navy-800 border border-navy-700 px-3 py-1.5 rounded-full"
-                >
-                  <svg className="w-3.5 h-3.5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+            {/* Trust badges */}
+            <div className="flex flex-wrap gap-3">
+              {['GDPR Compliant', 'CCPA Compliant', 'SOC 2 Aligned', 'NDA-Protected', 'AWS & Azure Certified'].map((badge) => (
+                <span key={badge}
+                  className="flex items-center gap-1.5 text-xs text-white/50 bg-white/5 border border-white/10 px-3 py-1.5 rounded-sm">
+                  <svg className="w-3 h-3 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   {badge}
@@ -146,79 +129,80 @@ export default function Home() {
       </section>
 
       {/* ── STATS ─────────────────────────────────────── */}
-      <section className="bg-navy-800 border-y border-navy-700">
+      <section className="bg-blue-brand">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map(({ value, label }) => (
               <div key={label} className="text-center">
-                <p className="font-display text-4xl md:text-5xl font-semibold text-gold-400 mb-2">
-                  {value}
-                </p>
-                <p className="text-slate-400 text-sm">{label}</p>
+                <p className="font-display text-4xl md:text-5xl font-extrabold text-white mb-2">{value}</p>
+                <p className="text-white/70 text-sm">{label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── SERVICES PREVIEW ──────────────────────────── */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center mb-14">
-          <p className="section-label">What We Do</p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-slate-100 mb-4">
-            End-to-End Data Services
-          </h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
-            From strategy through to production infrastructure — we cover the full data lifecycle so your team can focus on the business.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {services.map(({ icon, title, desc }) => (
-            <div key={title} className="card flex gap-5">
-              <div className="text-gold-400 mt-1 shrink-0">{icon}</div>
-              <div>
-                <h3 className="font-display text-xl font-semibold text-slate-100 mb-2">{title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
-              </div>
+      {/* ── SERVICES ──────────────────────────────────── */}
+      <section className="bg-navy-900">
+        <div className="max-w-7xl mx-auto px-6 py-24">
+          <div className="mb-14">
+            <p className="section-label">What We Do</p>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+              <h2 className="font-display text-4xl md:text-5xl font-extrabold text-white max-w-xl leading-tight">
+                Empower Your Business with World-Class Data Services
+              </h2>
+              <p className="text-white/50 max-w-sm md:text-right">
+                We cover the full data lifecycle so your team can focus on the business.
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
 
-        <div className="text-center mt-10">
-          <Link href="/services" className="btn-outline">
-            See All Services
-          </Link>
+          <div className="grid md:grid-cols-3 gap-px bg-white/5">
+            {services.map(({ icon, title, desc }) => (
+              <div key={icon} className="bg-navy-900 p-8 hover:bg-navy-800 transition-colors duration-300 group">
+                <span className="font-display text-4xl font-extrabold text-blue-brand/30 group-hover:text-blue-brand/60 transition-colors duration-300 block mb-5">
+                  {icon}
+                </span>
+                <h3 className="font-display text-lg font-bold text-white mb-3">{title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <Link href="/services" className="btn-primary">
+              Explore All Services →
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* ── WHY ACADORE ───────────────────────────────── */}
-      <section className="bg-navy-800 border-y border-navy-700">
+      {/* ── WHY ACADORE ── bright blue section like Hexaware ── */}
+      <section className="bg-blue-brand">
         <div className="max-w-7xl mx-auto px-6 py-24">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="section-label">Why Acadore</p>
-              <h2 className="font-display text-4xl font-semibold text-slate-100 mb-6">
+              <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-4">Why Acadore</p>
+              <h2 className="font-display text-4xl font-extrabold text-white mb-6 leading-tight">
                 Senior talent only — no juniors on your project
               </h2>
-              <p className="text-slate-400 leading-relaxed mb-8">
-                Every engagement at Acadore is staffed exclusively with senior data analysts and
-                engineers. No handoff to junior resources, no learning on your budget. Our team
-                averages 12 years of hands-on experience across industries including finance,
-                healthcare, retail, and SaaS.
+              <p className="text-white/70 leading-relaxed mb-8">
+                Every engagement at Acadore is staffed exclusively with senior analysts and engineers
+                averaging 12 years of hands-on experience. No handoff to junior resources.
+                No learning on your budget.
               </p>
               <ul className="space-y-4">
                 {[
                   'Dedicated point-of-contact for every project',
                   'Transparent weekly reporting and delivery milestones',
                   'Work under NDA — your data never leaves your environment',
-                  'Fixed-scope or retainer engagements — no surprise billing',
+                  'Fixed-scope or retainer — no surprise billing',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-gold-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-white mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-slate-300 text-sm">{item}</span>
+                    <span className="text-white/80 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -231,9 +215,9 @@ export default function Home() {
                 { label: 'Data Points Processed Daily', value: '2B+' },
                 { label: 'Industries Served', value: '11+' },
               ].map(({ label, value }) => (
-                <div key={label} className="bg-navy-700 rounded-xl p-6 border border-navy-600 text-center">
-                  <p className="font-display text-3xl font-semibold text-gold-400 mb-1">{value}</p>
-                  <p className="text-slate-400 text-xs">{label}</p>
+                <div key={label} className="card-on-blue text-center">
+                  <p className="font-display text-3xl font-extrabold text-white mb-1">{value}</p>
+                  <p className="text-white/60 text-xs">{label}</p>
                 </div>
               ))}
             </div>
@@ -242,39 +226,35 @@ export default function Home() {
       </section>
 
       {/* ── TESTIMONIALS ──────────────────────────────── */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center mb-14">
-          <p className="section-label">Client Results</p>
-          <h2 className="font-display text-4xl font-semibold text-slate-100 mb-4">
-            What Our Clients Say
-          </h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map(({ quote, name, role, company }) => (
-            <div key={name} className="card flex flex-col">
-              <svg className="w-8 h-8 text-gold-400/40 mb-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-              <p className="text-slate-300 text-sm leading-relaxed flex-1 mb-6">{quote}</p>
-              <div className="border-t border-navy-700 pt-4">
-                <p className="text-slate-100 font-semibold text-sm">{name}</p>
-                <p className="text-slate-500 text-xs mt-0.5">
-                  {role} · {company}
-                </p>
+      <section className="bg-navy-950">
+        <div className="max-w-7xl mx-auto px-6 py-24">
+          <div className="text-center mb-14">
+            <p className="section-label">Client Results</p>
+            <h2 className="font-display text-4xl font-extrabold text-white">What Our Clients Say</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {testimonials.map(({ quote, name, role, company }) => (
+              <div key={name} className="card flex flex-col">
+                <div className="w-8 h-1 bg-blue-brand mb-6" />
+                <p className="text-white/70 text-sm leading-relaxed flex-1 mb-6">&ldquo;{quote}&rdquo;</p>
+                <div className="border-t border-white/5 pt-4">
+                  <p className="text-white font-semibold text-sm">{name}</p>
+                  <p className="text-white/40 text-xs mt-0.5">{role} · {company}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ── BOTTOM CTA ────────────────────────────────── */}
-      <section className="bg-navy-800 border-t border-navy-700">
+      <section className="bg-navy-800 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-6 py-24 text-center">
           <p className="section-label">Ready to Start?</p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-slate-100 mb-5">
+          <h2 className="font-display text-4xl md:text-5xl font-extrabold text-white mb-5">
             Let&apos;s talk about your data
           </h2>
-          <p className="text-slate-400 mb-10">
+          <p className="text-white/50 mb-10">
             Book a free 30-minute strategy call. No sales pitch — just an honest conversation about where your data is today and where it needs to be.
           </p>
           <Link href="/contact" className="btn-primary text-base px-10 py-4">

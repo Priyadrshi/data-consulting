@@ -11,12 +11,12 @@ export default function Terms() {
 
       <section className="max-w-3xl mx-auto px-6 py-24">
         <p className="section-label">Legal</p>
-        <h1 className="font-display text-4xl font-semibold text-slate-100 mb-3">Terms of Service</h1>
-        <p className="text-slate-500 text-sm mb-12">Last updated: January 1, 2025</p>
+        <h1 className="font-display text-4xl font-bold text-white mb-3">Terms of Service</h1>
+        <p className="text-white/30 text-sm mb-12">Last updated: January 1, 2025</p>
 
-        <div className="space-y-10 text-slate-400 leading-relaxed">
+        <div className="space-y-10 text-white/50 leading-relaxed">
           <section>
-            <h2 className="font-display text-xl font-semibold text-slate-100 mb-3">1. Agreement</h2>
+            <h2 className="font-display text-xl font-bold text-white mb-3">1. Agreement</h2>
             <p>
               By accessing acadore.com or engaging Acadore Consulting LLC (&ldquo;Acadore&rdquo;)
               for services, you agree to be bound by these Terms of Service. If you do not agree,
@@ -25,7 +25,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-slate-100 mb-3">2. Services</h2>
+            <h2 className="font-display text-xl font-bold text-white mb-3">2. Services</h2>
             <p>
               Acadore provides data analytics, data engineering, business intelligence, and related
               consulting services. The specific scope, deliverables, timeline, and fees for any
@@ -35,7 +35,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-slate-100 mb-3">3. Intellectual Property</h2>
+            <h2 className="font-display text-xl font-bold text-white mb-3">3. Intellectual Property</h2>
             <p>
               All content on this website — including text, graphics, and code — is the property
               of Acadore Consulting LLC and may not be reproduced without written permission.
@@ -45,11 +45,11 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-slate-100 mb-3">4. Confidentiality</h2>
+            <h2 className="font-display text-xl font-bold text-white mb-3">4. Confidentiality</h2>
             <p>
               Acadore treats all client information as confidential. We are willing to execute a
               mutual NDA before any substantive discussion of your business or data. Contact us at{' '}
-              <a href="mailto:hello@acadore.com" className="text-gold-400 hover:text-gold-300">
+              <a href="mailto:hello@acadore.com" className="text-blue-400 hover:text-blue-300">
                 hello@acadore.com
               </a>{' '}
               to request an NDA.
@@ -57,7 +57,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-slate-100 mb-3">5. Limitation of Liability</h2>
+            <h2 className="font-display text-xl font-bold text-white mb-3">5. Limitation of Liability</h2>
             <p>
               To the extent permitted by law, Acadore&apos;s liability for any claim arising from
               services is limited to the fees paid by the client for the specific engagement giving
@@ -67,7 +67,7 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-slate-100 mb-3">6. Governing Law</h2>
+            <h2 className="font-display text-xl font-bold text-white mb-3">6. Governing Law</h2>
             <p>
               These Terms are governed by the laws of the United States. Any disputes will be
               resolved through binding arbitration under the rules of the American Arbitration
@@ -76,10 +76,10 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-slate-100 mb-3">7. Contact</h2>
+            <h2 className="font-display text-xl font-bold text-white mb-3">7. Contact</h2>
             <p>
               Questions about these Terms? Email{' '}
-              <a href="mailto:hello@acadore.com" className="text-gold-400 hover:text-gold-300">
+              <a href="mailto:hello@acadore.com" className="text-blue-400 hover:text-blue-300">
                 hello@acadore.com
               </a>
               .

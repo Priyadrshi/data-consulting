@@ -50,14 +50,14 @@ export default function About() {
       />
 
       {/* Header */}
-      <section className="relative bg-navy-900 border-b border-navy-700 py-20 overflow-hidden">
+      <section className="relative bg-navy-900 border-b border-white/5 py-20 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern bg-grid-sm opacity-60" aria-hidden="true" />
         <div className="relative max-w-7xl mx-auto px-6">
           <p className="section-label">Our Story</p>
-          <h1 className="font-display text-5xl md:text-6xl font-semibold text-slate-100 mb-5 max-w-2xl">
+          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-5 max-w-2xl">
             Built by practitioners, for practitioners
           </h1>
-          <p className="text-slate-400 text-lg max-w-xl">
+          <p className="text-white/50 text-lg max-w-xl">
             Acadore was founded in 2014 by data engineers and analysts who were tired of seeing
             clients overpay for underskilled consulting teams. We set out to do it differently.
           </p>
@@ -68,10 +68,10 @@ export default function About() {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <h2 className="font-display text-3xl font-semibold text-slate-100 mb-6">
+            <h2 className="font-display text-3xl font-bold text-white mb-6">
               A decade in the data trenches
             </h2>
-            <div className="space-y-4 text-slate-400 leading-relaxed">
+            <div className="space-y-4 text-white/50 leading-relaxed">
               <p>
                 Acadore Consulting was founded with a simple conviction: companies deserve senior
                 data expertise, not a bait-and-switch where a partner sells the work and a junior
@@ -92,36 +92,36 @@ export default function About() {
 
           <div className="space-y-5">
             <div className="card">
-              <p className="font-display text-4xl font-semibold text-gold-400 mb-1">2014</p>
-              <p className="text-slate-400 text-sm">Year founded</p>
+              <p className="font-display text-4xl font-semibold text-blue-400 mb-1">2014</p>
+              <p className="text-white/50 text-sm">Year founded</p>
             </div>
             <div className="card">
-              <p className="font-display text-4xl font-semibold text-gold-400 mb-1">200+</p>
-              <p className="text-slate-400 text-sm">Projects successfully delivered</p>
+              <p className="font-display text-4xl font-semibold text-blue-400 mb-1">200+</p>
+              <p className="text-white/50 text-sm">Projects successfully delivered</p>
             </div>
             <div className="card">
-              <p className="font-display text-4xl font-semibold text-gold-400 mb-1">$4.2M+</p>
-              <p className="text-slate-400 text-sm">In documented cost savings for clients</p>
+              <p className="font-display text-4xl font-semibold text-blue-400 mb-1">$4.2M+</p>
+              <p className="text-white/50 text-sm">In documented cost savings for clients</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Values */}
-      <section className="bg-navy-800 border-y border-navy-700">
+      <section className="bg-navy-900 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-24">
           <div className="text-center mb-14">
             <p className="section-label">How We Work</p>
-            <h2 className="font-display text-4xl font-semibold text-slate-100">Our Commitments</h2>
+            <h2 className="font-display text-4xl font-bold text-white">Our Commitments</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {values.map(({ title, desc }) => (
               <div key={title} className="card">
-                <div className="w-8 h-8 rounded bg-gold-400/10 border border-gold-400/20 flex items-center justify-center mb-4">
-                  <div className="w-2 h-2 rounded-full bg-gold-400" />
+                <div className="w-8 h-8 rounded bg-blue-brand/10 border border-blue-brand/20 flex items-center justify-center mb-4">
+                  <div className="w-2 h-2 rounded-full bg-blue-brand" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-slate-100 mb-2">{title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                <h3 className="font-display text-xl font-bold text-white mb-2">{title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -133,16 +133,16 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <p className="section-label">Credentials</p>
-            <h2 className="font-display text-3xl font-semibold text-slate-100 mb-8">
+            <h2 className="font-display text-3xl font-bold text-white mb-8">
               Team Certifications
             </h2>
             <ul className="space-y-3">
               {credentials.map((c) => (
                 <li key={c} className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-gold-400 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-blue-400 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-slate-300 text-sm">{c}</span>
+                  <span className="text-white/70 text-sm">{c}</span>
                 </li>
               ))}
             </ul>
@@ -150,14 +150,14 @@ export default function About() {
 
           <div>
             <p className="section-label">Experience</p>
-            <h2 className="font-display text-3xl font-semibold text-slate-100 mb-8">
+            <h2 className="font-display text-3xl font-bold text-white mb-8">
               Industries We Know
             </h2>
             <div className="flex flex-wrap gap-3">
               {industries.map((ind) => (
                 <span
                   key={ind}
-                  className="bg-navy-800 border border-navy-600 text-slate-300 text-sm px-4 py-2 rounded-lg"
+                  className="bg-navy-900 border border-white/10 text-white/70 text-sm px-4 py-2 rounded-lg"
                 >
                   {ind}
                 </span>
@@ -168,12 +168,12 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy-800 border-t border-navy-700">
+      <section className="bg-navy-900 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">
-          <h2 className="font-display text-4xl font-semibold text-slate-100 mb-4">
+          <h2 className="font-display text-4xl font-bold text-white mb-4">
             Let&apos;s work together
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-white/50 mb-8">
             We take on a limited number of new clients each quarter to maintain quality. Reach out
             now to check availability.
           </p>
