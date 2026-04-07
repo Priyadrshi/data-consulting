@@ -8,28 +8,27 @@ module.exports = {
     extend: {
       colors: {
         navy: {
-          950: '#060B18',
-          900: '#0A1020',
-          800: '#0D1525',
-          700: '#111D35',
-          600: '#172344',
+          950: '#04041A',
+          900: '#06061E',
+          800: '#0A0A2E',
+          700: '#0F0F42',
+          600: '#16166A',
         },
-        gold: {
-          300: '#E8C97A',
-          400: '#D4A843',
-          500: '#B8902F',
+        blue: {
+          brand: '#3636E8',
+          bright: '#4B4BFF',
+          dark: '#1A1A6E',
+          muted: '#2A2A9E',
         },
-        slate: {
-          350: '#8A97B0',
-        },
+        card: '#0D0D3A',
       },
       fontFamily: {
-        display: ['Playfair Display', 'Georgia', 'serif'],
+        display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
         body: ['DM Sans', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'grid-pattern':
-          "linear-gradient(rgba(212,168,67,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(212,168,67,0.04) 1px, transparent 1px)",
+          "linear-gradient(rgba(70,70,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(70,70,255,0.06) 1px, transparent 1px)",
       },
       backgroundSize: {
         'grid-sm': '40px 40px',
