@@ -21,76 +21,56 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Close menu on route change
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [router.pathname]);
+  useEffect(() => { setMenuOpen(false); }, [router.pathname]);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-navy-950/95 backdrop-blur-md border-b border-navy-700/60 py-3' : 'bg-transparent py-5'
-      }`}
-    >
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled ? 'bg-navy-950/95 backdrop-blur-md border-b border-white/5 py-3' : 'bg-navy-950/80 backdrop-blur-sm py-4'
+    }`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 rounded bg-gold-400 flex items-center justify-center">
-            <span className="text-navy-950 font-display font-bold text-sm">A</span>
+          <div className="w-9 h-9 bg-blue-brand flex items-center justify-center rounded-sm">
+            <span className="text-white font-display font-bold text-sm">A</span>
           </div>
-          <span className="font-display text-xl font-semibold text-slate-100 group-hover:text-gold-400 transition-colors duration-200">
-            Acadore
-            <span className="text-gold-400 ml-1 font-light text-base">Consulting</span>
+          <span className="font-display text-xl font-bold text-white tracking-tight">
+            Acadore<span className="text-blue-400 font-light ml-1">Consulting</span>
           </span>
         </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
+            <Link key={href} href={href}
               className={`nav-link text-sm font-medium transition-colors duration-200 ${
-                router.pathname === href
-                  ? 'text-gold-400'
-                  : 'text-slate-400 hover:text-slate-100'
-              }`}
-            >
+                router.pathname === href ? 'text-blue-400' : 'text-white/70 hover:text-white'
+              }`}>
               {label}
             </Link>
           ))}
         </nav>
 
-        {/* CTA */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link href="/contact" className="btn-primary text-sm py-2 px-5">
+        <div className="hidden md:flex">
+          <Link href="/contact" className="btn-primary text-sm py-2.5 px-6">
             Get a Free Consultation
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden text-slate-300 hover:text-gold-400 transition-colors duration-200 p-2"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className="block w-5 h-0.5 bg-current mb-1.5 transition-all duration-200"></span>
-          <span className="block w-5 h-0.5 bg-current mb-1.5 transition-all duration-200"></span>
-          <span className="block w-5 h-0.5 bg-current transition-all duration-200"></span>
+        {/* Mobile */}
+        <button className="md:hidden text-white p-2" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+          <span className="block w-5 h-0.5 bg-current mb-1.5"></span>
+          <span className="block w-5 h-0.5 bg-current mb-1.5"></span>
+          <span className="block w-5 h-0.5 bg-current"></span>
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-navy-900 border-t border-navy-700 px-6 py-4">
+        <div className="md:hidden bg-navy-950 border-t border-white/5 px-6 py-4">
           {navLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className={`block py-3 text-sm font-medium border-b border-navy-800 last:border-0 transition-colors duration-200 ${
-                router.pathname === href ? 'text-gold-400' : 'text-slate-400'
-              }`}
-            >
+            <Link key={href} href={href}
+              className={`block py-3 text-sm font-medium border-b border-white/5 last:border-0 ${
+                router.pathname === href ? 'text-blue-400' : 'text-white/70'
+              }`}>
               {label}
             </Link>
           ))}
